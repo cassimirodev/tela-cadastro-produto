@@ -1,0 +1,66 @@
+body {
+    font-family: "Lexend";
+    margin: 0;
+    padding: 0;
+}
+
+
+.lexend {
+    font-family: "Lexend";
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+
+
+/* ............................................. */ 
+
+.container {
+    max-width: 1152px;
+    display: block;
+    margin: 0 auto;
+
+}
+
+/* .....................HEADER........................ */ 
+
+header {
+    width: 100%;
+    background-color: #8D969D;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1152px; 
+    margin: 0 auto; 
+}
+
+.header img {
+    height: 80px;
+}
+
+.header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.header nav a {
+    text-decoration: none;
+    color: #fff;
+    size: 10px;
+    font-size: 20px;
+}
+/* hover */
+.header nav a:hover {
+    color: #000;
+}
+/* hover */
+
+.header nav li {
+    padding: 10px;
+    list-style: none;
+}
+
+
+
