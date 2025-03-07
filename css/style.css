@@ -15,7 +15,7 @@ body {
 /* ............................................. */ 
 
 .container {
-    max-width: 1152px;
+    max-width: 95%;
     display: block;
     margin: 0 auto;
 
@@ -32,17 +32,31 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1152px; 
+    max-width: 95%;  
     margin: 0 auto; 
+    padding: 3px 0;
+    /* background-color: black; */
+    max-height: 90px;
 }
 
+.menu-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
 .header img {
     height: 80px;
-}
+    margin: 0;
+    padding: 0;
+}   
 
 .header nav ul {
     display: flex;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .header nav a {
@@ -51,9 +65,11 @@ header {
     size: 10px;
     font-size: 20px;
 }
+
 /* hover */
 .header nav a:hover {
     color: #000;
+    transition: 0.5s;
 }
 /* hover */
 
