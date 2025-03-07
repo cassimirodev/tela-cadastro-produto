@@ -2,6 +2,7 @@ body {
     font-family: "Lexend";
     margin: 0;
     padding: 0;
+    
 }
 
 
@@ -77,6 +78,90 @@ header {
     padding: 10px;
     list-style: none;
 }
+
+/* .....................MAIN........................ */ 
+
+.box-principal {
+    background-color: white;
+    display: flex;
+    justify-content: center;    
+    margin: 20px 20px;
+    width: 95%;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.459);
+}
+
+.titulo {
+    text-align: top;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    width: 95%;
+    font-size: 20px;
+
+}
+
+.text-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 0;
+    width: 100%;
+    margin-top: 120px;
+    margin-left: 50px;;
+    
+}
+
+.text-inputs label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.text-inputs input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 400px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.075);
+}
+
+
+
+.imagem-submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-right: 50px;
+    
+}
+
+.imagem-submit img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+footer {
+    background-color: #8D969D;
+    color: #fff;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+footer p {
+    text-align: center;
+}
+
+.footer {
+    margin: 0;
+    padding: 0;
+}
+
 
 
 
