@@ -16,9 +16,13 @@ body {
 /* ............................................. */ 
 
 .container {
-    max-width: 95%;
-    display: block;
+    flex: 1; /* isso aqui é pro container ocupar o espaço disponível e empurrar o footer*/ 
+    width: 95%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0 auto;
+    height: 100%;
 
 }
 
@@ -33,11 +37,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 95%;  
+    max-width: 90%;  
     margin: 0 auto; 
     padding: 3px 0;
     /* background-color: black; */
-    max-height: 90px;
+    max-height: 80px;
+    
 }
 
 .menu-buttons {
@@ -47,6 +52,7 @@ header {
     padding: 0;
     margin: 0;
 }
+
 .header img {
     height: 80px;
     margin: 0;
@@ -84,42 +90,47 @@ header {
 .box-principal {
     background-color: white;
     display: flex;
-    justify-content: center;    
+    justify-content: center;
     margin: 20px 20px;
+    gap: 40px;
     width: 95%;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.459);
+    padding: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(0, 0, 0);
 }
 
 .titulo {
-    text-align: top;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: top;
-    width: 95%;
+    width: 100%;
+    padding: 0;
     font-size: 20px;
 
 }
 
 .text-inputs {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: left;
+    justify-content: center;
     padding: 0;
+    margin: 0;
     width: 100%;
-    margin-top: 120px;
-    margin-left: 50px;;
+    margin: 20px  40px;
+    padding: 10px;
+    gap: 5px;
     
 }
 
 .text-inputs label {
     font-weight: bold;
     margin-top: 10px;
-}
+} 
 
 .text-inputs input {
-    padding: 8px;
+    height: 40px;
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 400px;
@@ -133,24 +144,58 @@ header {
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-right: 50px;
+    
     
 }
 
 .imagem-submit img {
     width: 100%;
-    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.submit-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 50px;
 
+}
+
+.submit-button button {
+        background-color: blue; 
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        border-radius: 8px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+}
+
+.box-principal {
+    display: flex;
+    flex-direction: column;
+} /* */
+
+
+
+/* .....................FOOTER........................ */
 
 
 footer {
     background-color: #8D969D;
     color: #fff;
     padding: 10px;
-    margin-top: 20px;
-    margin-bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 footer p {
@@ -158,10 +203,66 @@ footer p {
 }
 
 .footer {
+    display: flex;
+    justify-content: center;    
+    align-items: center;
     margin: 0;
     padding: 0;
 }
 
 
 
+/* .....................RESET CSS........................ 
 
+
+
+http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+ HTML5 display-role reset for older browsers 
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*/
