@@ -15,9 +15,8 @@ body {
 
 /* ............................................. */ 
 
-.container {
-    flex: 1; /* isso aqui é pro container ocupar o espaço disponível e empurrar o footer*/ 
-    width: 95%; 
+.container { 
+    width: 1152px; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -71,12 +70,12 @@ header {
     color: #fff;
     size: 10px;
     font-size: 20px;
+    transition: color 300ms ease-in-out, background 300ms ease-in-out;
 }
 
 /* hover */
 .header nav a:hover {
     color: #000;
-    transition: 0.5s;
 }
 /* hover */
 
@@ -92,8 +91,10 @@ header {
     display: flex;
     justify-content: center;
     margin: 20px 20px;
-    gap: 40px;
-    width: 95%;
+
+    gap: 80px;
+    width: 100%;
+    height: 100%;
     padding: 10px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
     border: 1px solid rgba(0, 0, 0);
@@ -118,28 +119,28 @@ header {
     padding: 0;
     margin: 0;
     width: 100%;
-    margin: 20px  40px;
-    padding: 10px;
-    gap: 5px;
+    margin-left: 30px;
+    padding-left: 60px;
+    gap: 10px;
     
 }
 
 .text-inputs label {
     font-weight: bold;
-    margin-top: 10px;
+    margin: 0px; 
 } 
 
 .text-inputs input {
     height: 40px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: 400px;
+    width: 900px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.075);
 }
 
 
 
-.imagem-submit {
+/* .imagem-submit {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -153,6 +154,39 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+} */
+
+
+.imagem-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 50px;
+    
+}
+#picture-input {
+    display: none;  
+}
+
+.imagem-submit label {
+    width: 400px;
+    height: 400px;
+    aspect-ratio: 5/4;
+    background: #aaa;
+    border: 3px dashed black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: color 300ms ease-in-out, background 300ms ease-in-out;
+}
+
+.imagem-submit label:hover {
+    background: #ccc;
+    color: #fff;
 }
 
 .submit-button {
@@ -163,6 +197,7 @@ header {
     margin-top: 20px;
     margin-bottom: 20px;
     padding-top: 50px;
+    gap: 40px;
 
 }
 
@@ -171,11 +206,24 @@ header {
         border: none;
         color: white;
         padding: 15px 32px;
-        border-radius: 8px;
+        border-radius: 200px;
+        height: 80px;
+        width: 200px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
+        transition: opacity 300ms ease-in-out, background 300ms ease-in-out;
+        cursor: pointer;
+        font-family: lexend;
+}
+
+.submit-button button:nth-child(2) {
+    background-color: red;
+}       
+
+.submit-button button:hover {
+    opacity: 0.8;
 }
 
 .box-principal {

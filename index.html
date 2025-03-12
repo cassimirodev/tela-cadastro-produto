@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="ptbr">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     <script src="script/script.js"></script>
 </head>
-
 <body>
     <header>
         <div class="header">
@@ -34,10 +32,8 @@
             </nav> 
         </div>
     </header>
-
-
+    <main>
     <div class="container">
-        <main>
                 <div class="box-principal">
                     <div class="titulo">
                         <h2>Cadastrar Produto</h2>
@@ -62,16 +58,21 @@
                         <input type="text" name="Preço" id="produto-preco">
                     </div>
                     <div class="imagem-submit">
-                        <input type="image" src="assets/img/SUBMETER IMAGEM.png" alt="Enviar">
-                    </div>
+                    <label for="picture-input" tabindex="0" >
+                        <span class="picture-input">Escolha uma imagem</span>
+                    </label>
+                    <input type="file" id="picture-input" accept="image/*">
+                </div>
                     <div class="submit-button">
                         <button onclick="">Registrar</button>
+                        <button onclick="">Resetar</button>
                     </div>
+                    
                 </div>
-        </main>
+                
     </div>
     </div>
-
+    </main>
     <footer>
         <div class="footer">
             <p>&copy; 2025 - TechNova</p>
