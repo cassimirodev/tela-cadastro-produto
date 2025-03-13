@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
     buttonAdicionar.addEventListener('click', functionAdicionar);
     buttonResetar.addEventListener('click', functionResetar);
 
-    function functionResetar() {
+    function functionResetar() { 
         const textInputs = document.querySelectorAll('.text-inputs input');
         textInputs.forEach(function(input) {
             input.value = '';
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const textInputs = document.querySelectorAll('.text-inputs input');
         let isValid = true;
 
-        textInputs.forEach(function(input) {
+        textInputs.forEach(function(input) { 
             const pattern = input.getAttribute('pattern');
             const regex = new RegExp(pattern);
             if (pattern && !regex.test(input.value)) {
