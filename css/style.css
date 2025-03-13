@@ -128,6 +128,7 @@ header {
 .text-inputs label {
     font-weight: bold;
     margin: 0px; 
+    padding: 8px;
 } 
 
 .text-inputs input {
@@ -136,6 +137,12 @@ header {
     border-radius: 5px;
     width: 900px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.075);
+}
+
+.text-inputs form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 
@@ -174,7 +181,9 @@ header {
 .imagem-submit label {
     width: 400px;
     height: 400px;
-    aspect-ratio: 5/4;
+    margin: 0;
+    padding: 0;
+    aspect-ratio: 16/9;
     background: #aaa;
     border: 3px dashed black;
     display: flex;
@@ -182,11 +191,18 @@ header {
     justify-content: center;
     cursor: pointer;
     transition: color 300ms ease-in-out, background 300ms ease-in-out;
+    overflow: hidden;  /* fins didatico = pra imagem nao passar do quadrado */
 }
 
 .imagem-submit label:hover {
     background: #ccc;
     color: #fff;
+}
+
+.picture-image img { /* fins didatico = ficar na largura e tamanho maximo do pai e o cover pra img nao ficar distorcida */
+    max-width: 100%;
+    max-width: 100%;
+    object-fit: cover;
 }
 
 .submit-button {

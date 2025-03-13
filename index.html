@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-    <script src="script/script.js"></script>
 </head>
 <body>
     <header>
@@ -19,7 +18,6 @@
                     <img src="assets/img/technova_logo.png" alt="NovaTech Logo">
                 </a>
             </h1>
-
             <nav>
                 <div class="menu-buttons">
                     <ul>
@@ -33,51 +31,53 @@
         </div>
     </header>
     <main>
-    <div class="container">
-                <div class="box-principal">
-                    <div class="titulo">
-                        <h2>Cadastrar Produto</h2>
-                    </div>
-                    <div class="text-inputs">
-                        <label for="produto-codigo">Código do Produto:</label>
-                        <input type="text" name="Código do Produto" id="produto-codigo" >
+        <div class="container">
+            <div class="box-principal">
+                <div class="titulo">
+                    <h2>Cadastrar Produto</h2>
+                </div>
+                <div class="text-inputs">
+                    <form id="formCadastro">
+                        <label for="produto-codigo"><span style="color: red;">*</span>Código do Produto:</label>
+                        <input type="text" name="CodigoProduto" id="produto-codigo" pattern="^[0-9]+$" required> 
 
-                        <label for="produto-nome">Nome do Produto:</label>
-                        <input type="text" name="Nome do Produto" id="produto-nome">
+                        <label for="produto-nome"><span style="color: red;">*</span>Nome do Produto:</label>
+                        <input type="text" name="NomeProduto" id="produto-nome" pattern="^[A-Za-zÀ-ÿ0-9\s]+$" required>
 
-                        <label for="produto-categoria">Categoria:</label>
-                        <input type="text" name="Categoria" id="produto-categoria">
+                        <label for="produto-categoria"><span style="color: red;">*</span>Categoria:</label>
+                        <input type="text" name="Categoria" id="produto-categoria" pattern="^[A-Za-zÀ-ÿ0-9\s]+$" required>
 
-                        <label for="produto-marca">Marca:</label>
-                        <input type="text" name="Marca" id="produto-marca">
+                        <label for="produto-marca"><span style="color: red;">*</span>Marca:</label>
+                        <input type="text" name="Marca" id="produto-marca" pattern="^[A-Za-zÀ-ÿ0-9\s]+$" required>
 
-                        <label for="produto-modelo">Modelo:</label>
-                        <input type="text" name="Modelo" id="produto-modelo">
+                        <label for="produto-modelo"><span style="color: red;">*</span>Modelo:</label>
+                        <input type="text" name="Modelo" id="produto-modelo" pattern="^[A-Za-zÀ-ÿ0-9\s]+$" required>
 
-                        <label for="produto-preco">Preço:</label>
-                        <input type="text" name="Preço" id="produto-preco">
-                    </div>
-                    <div class="imagem-submit">
+                        <label for="produto-preco"><span style="color: red;">*</span>Preço:</label>
+                        <input type="text" name="Preco" id="produto-preco" pattern="^\d+([.,]\d+)?$" required>
+                    </form>
+                </div>
+
+                <div class="imagem-submit">
                     <label for="picture-input" tabindex="0" >
-                        <span class="picture-input">Escolha uma imagem</span>
+                        <span class="picture-image">Escolha uma imagem</span>
                     </label>
                     <input type="file" id="picture-input" accept="image/*">
                 </div>
-                    <div class="submit-button">
-                        <button onclick="">Registrar</button>
-                        <button onclick="">Resetar</button>
-                    </div>
-                    
+
+                <div class="submit-button">
+                    <button type="button" id="register-button">Registrar</button>
+                    <button type="button" id="reset-button">Resetar</button>
                 </div>
-                
-    </div>
-    </div>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="footer">
             <p>&copy; 2025 - TechNova</p>
         </div>
     </footer>
-</body>
 
+    <script src="script/script.js"></script>
+</body>
 </html>
